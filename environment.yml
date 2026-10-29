@@ -1,0 +1,11 @@
+name: amrflow
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - wget
+  - pip
+  - pip:
+      - -e .

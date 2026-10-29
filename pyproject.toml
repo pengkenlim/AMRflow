@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amrflow"
+version = "0.1.0"
+description = "AMRflow bioinformatics workflow for metagenomic datasets"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "biopython",
+    "numpy",
+    "plotly",
+    "jinja2",
+]
+
+[project.scripts]
+amrflow = "amrflow.cli:main"
